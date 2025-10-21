@@ -1,0 +1,331 @@
+<head>
+    
+    <title>Pablo Pulido Mencias - Portfolio</title>
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        body {
+            background-color: #EEEEEE;
+            /* background color grey */
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body> 
+    
+    <div class="container-fluid">      <!-- bootstrap container fo the whole body-->
+        <header class="Header bg-gradient-primary">              <!--FOR THE GRADIENT-->
+            <div class="container">   <!--container for the header-->
+                <div class="row justify-content-center text-center">        <!--row of content centered -->
+                    <div class="col-12">   <!--the column is the whole width-->
+                        <h1 class="text-white">Pablo Pulido Mencias</h1>
+                        <hr class="my-2 border-light" />   <!--spacing bar-->
+                        <h2 class="text-white-50">Junior undergraduate electrical engineer</h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-accent">  <!--bootstrap navegation bar with gradient-->
+            <div class="container">    <!-- bootstrap container for the navbar-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>  <!--toggle for navbar and resize for devices-->
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">   <!--the navbar-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#summary">Summary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a href="Portfolio_Pablo Pulido.pdf" class="btn btn-primary btn-lg me-3" download>
+                            <i class="fas fa-download me-2"></i>Download Portfolio
+                        </a>
+                        <div class="text-white">
+                            <small>Downloads: <span id="download-count" class="badge bg-light text-dark">0</span></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">  <!--main content with a row and column of full width-->
+                                         <!--Greeting Section-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <section class="mb-4 text-center">
+                            <div class="alert alert-info" role="alert">
+                                <h3 id="greeting-message">Loading greeting...</h3>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+                                         <!--Summary-->  
+            <div class="container">
+                <div class="row">
+                    <div class="col-12"> 
+                        <section id="summary" class="mb-5">   
+                            <div class="row">
+                                <div class="col-lg-8 col-md-12">
+                                    <hr />
+                                    <p id="intro">
+                                    
+                                    I am an internation student form Madrid, Spain. My bachelor is electrical engineering, however in my home
+                                    country
+                                    I study something similar called telecommunications engineering.
+                                    In my free time I like to practice sports and read.
+                                    </p>
+                                    <p>Introductory video about myself :</p>
+                                </div>
+                                <div class="col-lg-4 col-md-12 d-flex justify-content-center align-items-center">
+                                    <video class="video_intro" width="400" controls>
+                                    <source src="IntroducctionVideo.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+                                        <!--Skills-->
+            <div class="container">         
+                <div class="row">
+                    <div class="col-12">
+                        <hr class="my-4" /> 
+                        <section id="skills" class="mb-5">
+                            <h2><u>Skills:</u></h2>
+                            
+                            <!-- Skills Form -->
+                            <div class="row mb-4">
+                                <div class="col-12">
+                                    <div class="card border-primary">
+                                        <div class="card-header bg-primary text-white">
+                                            <h5 class="mb-0">Add New Skill</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <form id="skillForm">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <input type="text" id="skillInput" class="form-control" placeholder="Enter a new skill..." required>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button type="submit" class="btn btn-primary w-100">Add Skill</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title text-primary">Programming</h5>
+                                            <ul class="list-unstyled" id="programming-skills">
+                                                <li class="mb-2"><span class="badge bg-primary me-2">Java</span></li>
+                                                <li class="mb-2"><span class="badge bg-primary me-2">C</span></li>
+                                                <li class="mb-2"><span class="badge bg-primary me-2">Matlab</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title text-success">Tools</h5>
+                                            <ul class="list-unstyled" id="tools-skills">
+                                                <li class="mb-2"><span class="badge bg-success me-2">Wireshark</span></li>
+                                                <li class="mb-2"><span class="badge bg-success me-2">Ubuntu</span></li>
+                                                <li class="mb-2"><span class="badge bg-success me-2">VS Code</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title text-warning">Languages</h5>
+                                            <ul class="list-unstyled" id="languages-skills">
+                                                <li class="mb-2"><span class="badge bg-warning text-dark me-2">Spanish (native)</span></li>
+                                                <li class="mb-2"><span class="badge bg-warning text-dark me-2">English (C1 level)</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div> <!-- end of row and col for skills-->
+            </div>
+
+                                        <!-- Projects -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <section id="projects" class="mb-5">
+                            <h2><u>Projects:</u></h2>
+                            
+                            <div class="row">
+                                <!-- Projects will be dynamically generated here -->
+                            </div>
+                        </section>
+                    </div>
+                </div>  <!-- end of row and column for projects-->
+            </div>
+            
+
+                                        <!-- Education and experience -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <section id="education" class="mb-5">
+                            <h2><u>Education and Experience</u></h2>
+                            
+                            <!-- Education Table -->
+                            <div class="row mb-4">
+                                <div class="col-12">
+                                    <h4 class="text-primary mb-3"><i class="fas fa-graduation-cap me-2"></i>Education</h4>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-hover">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th scope="col">Institution</th>
+                                                    <th scope="col">Program</th>
+                                                    <th scope="col">Duration</th>
+                                                    <th scope="col">Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>University Carlos III of Madrid</strong></td>
+                                                    <td>Telecommunications Engineering <small class="text-muted">(Electrical Engineering)</small></td>
+                                                    <td>2022 - 2027</td>
+                                                    <td>Gained knowledge in circuit theory, signal processing, network and service management, and advanced mathematics. Attended talks on cybersecurity and artificial intelligence.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>North Arizona University</strong></td>
+                                                    <td>Bachelor's in Electrical Engineering</td>
+                                                    <td>2025-2026</td>
+                                                    <td>Currently studying as an exchange student a Bachelor's degree in Electrical Engineering with a focus on electronics and programming. Engaged in various projects and coursework to enhance technical skills.</td>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Experience Table -->
+                            <div class="row mb-4">
+                                <div class="col-12">
+                                    <h4 class="text-success mb-3"><i class="fas fa-briefcase me-2"></i>Experience</h4>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-hover">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th scope="col">Position</th>
+                                                    <th scope="col">Company</th>
+                                                    <th scope="col">Duration</th>
+                                                    <th scope="col">Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Lifeguard</strong></td>
+                                                    <td>Olaqua</td>
+                                                    <td>Summer 2025 (3 months)</td>
+                                                    <td>Part-time lifeguard position ensuring water safety and providing emergency response services.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Languages Table -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <h4 class="text-warning mb-3"><i class="fas fa-language me-2"></i>Languages</h4>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-hover">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th scope="col">Language</th>
+                                                    <th scope="col">Proficiency Level</th>
+                                                    <th scope="col">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Spanish</strong></td>
+                                                    <td><span class="badge bg-success">Native</span></td>
+                                                    <td>Fluent</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>English</strong></td>
+                                                    <td><span class="badge bg-primary">C1 Level</span></td>
+                                                    <td>Fluent</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" />
+        </main>
+    </div>
+
+           <!--footer-->
+    <footer class="footer bg-gradient-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <section id="contact">
+                        <h2 class="text-white"><u>Contact info</u></h2>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12 text-center mb-3">
+                                <p class="text-white-50">Email: <a href="mailto:pp874@nau.edu" class="text-info">pp874@nau.edu</a></p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 text-center mb-3">
+                                <p class="text-white-50">Phone number: <mark id="mark_phone" class="bg-warning text-dark"> +1 (928) 266 8585</mark></p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 text-center mb-3">
+                                <p class="text-white-50">Linkedin: <a href="https://www.linkedin.com/in/pablo-pulido-mencías-7912032a7"
+                                        class="text-info">Pablo Pulido Mencias</a></p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
